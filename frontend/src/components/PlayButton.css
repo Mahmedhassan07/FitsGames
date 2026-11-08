@@ -1,0 +1,80 @@
+.play-now-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 20px;
+  height: 52px;
+  color: white;
+  text-shadow: 2px 2px rgb(116, 116, 116);
+  text-transform: uppercase;
+  cursor: pointer;
+  border: solid 2px black;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 17px;
+  background-color: hsl(49deg 98% 60%);
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  text-decoration: none;
+  width: fit-content;
+}
+.play-now-btn:active {
+  transform: scale(0.9);
+  transition: all 100ms ease;
+}
+.play-now-btn svg {
+  transition: all 0.5s ease;
+  z-index: 2;
+  flex-shrink: 0;
+}
+.play-now-btn .play-text {
+  transition: all 0.5s ease;
+  transition-delay: 300ms;
+}
+.play-now-btn:hover svg {
+  transform: scale(3) translate(50%);
+}
+.play-now-btn .now-text {
+  position: absolute;
+  left: 0;
+  transform: translateX(-100%);
+  transition: all 0.5s ease;
+  z-index: 2;
+}
+.play-now-btn:hover .now-text {
+  transform: translateX(10px);
+  transition-delay: 300ms;
+}
+.play-now-btn:hover .play-text {
+  transform: translateX(200%);
+  transition-delay: 300ms;
+}
+.play-now-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 20px;
+  height: 52px;
+  color: white;
+  text-shadow: 2px 2px rgb(116, 116, 116);
+  text-transform: uppercase;
+  cursor: pointer;
+  border: solid 2px black;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 17px;
+  background-color: hsl(49deg 98% 60%);
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  text-decoration: none;
+  width: fit-content;
+}
+.play-now-btn:hover {
+  box-shadow: 0 0 20px hsl(49deg 98% 60%), 0 0 40px hsl(49deg 98% 60% / 0.5);
+}
